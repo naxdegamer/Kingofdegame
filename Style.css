@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.score-section {
+    flex: 1;
+    color: white;
+}
+
+.score-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+#pongCanvas {
+    display: block;
+    background: linear-gradient(to right, #1a1a2e, #16213e);
+    border: 3px solid #ffd700;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: none;
+}
+
+.controls {
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    width: 800px;
+}
+
+.controls p {
+    margin: 8px 0;
+}
+
+.controls strong {
+    color: #ffd700;
+}
